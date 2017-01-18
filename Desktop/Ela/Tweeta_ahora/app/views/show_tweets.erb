@@ -1,0 +1,12 @@
+<h1><%= @user.twitter_handles %></h1>
+
+<% if @tweets %>
+  <% @tweets.each do |tweet| %>
+    <ul>
+      <p><%= tweet.user_creation_time %></p>
+      <li><%= tweet.body %></li>
+
+      <br>
+    </ul>  
+  <% end %>
+<% end %>
