@@ -1,0 +1,16 @@
+<h1>Sign Up</h1>
+<% if @errors %>
+  <p><%= @errors %></p>
+<% end %>
+<div class="container" id="form">
+  <!-- ¿Qué va en esta parte para realizar el sign up? -->
+<form action="/signup" method="post">
+  <input type="text" name="user_name" value="" placeholder="user name">
+  <br>
+  <input type="text" name="email" value="" placeholder="user@mail.com">
+  <br>
+  <input type="password" name="password" value="" placeholder="password">
+   <br>
+  <input type="submit" value="Register">
+</form>
+</div> <!--end "sign up form" div -->

@@ -1,0 +1,23 @@
+<h1>Welcome to MiniSubmarine!</h1>
+<div class="content">
+  <img src="/img/submarine.jpeg">
+</div>
+
+<div class="container title">
+  <% if @message %>
+    <%= @message %>
+  <% end %>
+   <!-- ¿Qué va en esta parte para realizar sign in/up y mostrar lista de ganadores? -->  
+  <form method="get" action="/signin">
+  <button id="index_button" type="submit" value="LogIn">LogIn</button><br>
+  </form>
+  </br>
+  <form method="get" action="/signup">
+  <button id="index_button" type="submit" value="SignUp">SignUp</button><br>
+  </form>
+  </br>
+  <a href='/record'>Records</a>
+</div>
+
+
+  
